@@ -15,7 +15,7 @@ def check_answer(score, user_answer, random_dictA, random_dictB):
       score += 1
       clear()
       print(logo)
-      print(f"You're right! Current Score = {score}")
+      print(f"You're right! Current Score = {score}😤")
       random_dictA = random_dictB
       random_dictB = pick_person()
       print(f"Compare A: {random_dictA['name']}, a {random_dictA['description']}, from {random_dictA['country']}")
@@ -25,7 +25,7 @@ def check_answer(score, user_answer, random_dictA, random_dictB):
     else:
       clear()
       print(logo)
-      print(f"Sorry, that's wrong. Final score: {score}")
+      print(f"Sorry, that's wrong. Final score: {score}😬")
       game_end = True
     
 score = 0
