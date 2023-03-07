@@ -20,6 +20,8 @@ def check_answer(score, user_answer, random_dictA, random_dictB):
       print(f"You're right! Current Score = {score}😤")
       random_dictA = random_dictB
       random_dictB = pick_person()
+      if random_dictA == random_dictB:
+        random_dictB = pick_person()
       print(f"Compare A: {random_dictA['name']}, a {random_dictA['description']}, from {random_dictA['country']}")
       print(vs)
       print(f"Against B: {random_dictB['name']}, a {random_dictB['description']}, from {random_dictB['country']}")
@@ -35,6 +37,8 @@ def play game():
   score = 0
   random_dictA = pick_person()
   random_dictB = pick_person()
+  if random_dictA == random_dictB:
+    random_dictB = pick_person()
   print(f"Option A: {random_dictA['name']}, a {random_dictA['description']}, from {random_dictA['country']}")
   print(vs)
   print(f"Option B: {random_dictB['name']}, a {random_dictB['description']}, from {random_dictB['country']}")
