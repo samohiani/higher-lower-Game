@@ -16,11 +16,11 @@ def check_answer(score, user_answer, random_dictA, random_dictB):
       clear()
       print(logo)
       print(f"You're right! Current Score = {score}")
-      random_dictD = random_dictB
-      random_dictC = pick_person()
-      print(f"Compare A: {random_dictD['name']}, a {random_dictD['description']}, from {random_dictD['country']}")
+      random_dictA = random_dictB
+      random_dictB = pick_person()
+      print(f"Compare A: {random_dictA['name']}, a {random_dictA['description']}, from {random_dictA['country']}")
       print(vs)
-      print(f"Against B: {random_dictC['name']}, a {random_dictC['description']}, from {random_dictC['country']}")
+      print(f"Against B: {random_dictB['name']}, a {random_dictB['description']}, from {random_dictB['country']}")
       user_answer = input("Who has more followers? Type 'A' or 'B': ").upper()
     else:
       clear()
