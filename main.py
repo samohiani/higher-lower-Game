@@ -5,10 +5,11 @@ from replit import clear
 import random
 print(logo)
 
+#function to pick a random dictionary from "game_data"
 def pick_person():
   "Returns random person from instagram."
   return random.choice(data)
-
+#function that checks if the answer is corroct or not
 def check_answer(score, user_answer, random_dictA, random_dictB):
   """Checks to see if answer is correct"""
   game_end = False
